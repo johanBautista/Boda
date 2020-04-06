@@ -26,5 +26,17 @@
   },
   "devDependencies": {
     "nodemon": "^1.18.3"
-  }
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johanBautista/Boda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johanBautista/Boda/issues"
+  },
+  "homepage": "https://github.com/johanBautista/Boda#readme",
+  "description": ""
 }
