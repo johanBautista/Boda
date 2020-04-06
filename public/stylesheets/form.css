@@ -11,7 +11,7 @@
 
 }
 .form-style-8 h2{
-	background: #AF526B;
+	background: #007cad;
 	text-transform: uppercase;
 	font-family: "Cormorant", sans-serif;
 	color: #FEEDE0;
@@ -42,7 +42,7 @@
 	width: 100%;
 	padding: 7px;
 	border: none;
-	border-bottom: 1px solid #AF526B;
+	border-bottom: 1px solid #007cad;
 	background: transparent;
 	margin-bottom: 10px;
 	font: 16px "Cormorant", sans-serif;
@@ -55,14 +55,14 @@
 .form-style-8 input[type="button"], 
 .form-style-8 input[type="radio"], 
 .form-style-8 input[type="submit"]{
-	-moz-box-shadow: inset 0px 1px 0px 0px #AF526B;
-	-webkit-box-shadow: inset 0px 1px 0px 0px #AF526B;
-	box-shadow: inset 0px 1px 0px 0px #AF526B;
+	-moz-box-shadow: inset 0px 1px 0px 0px #007cad;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #007cad;
+	box-shadow: inset 0px 1px 0px 0px #007cad;
 	background-color: #ffffff;
-	border: 1px solid #AF526B;
+	border: 1px solid #007cad;
 	display: inline-block;
 	cursor: pointer;
-	color: #AF526B;
+	color: #007cad;
 	font-family: "Cormorant", sans-serif;
 	font-size: 14px;
 	padding: 8px 18px;
@@ -72,14 +72,14 @@
 }
 .form-style-8 input[type="button"], 
 .form-style-8 input[type="submit"]{
-	-moz-box-shadow: inset 0px 1px 0px 0px #AF526B;
-	-webkit-box-shadow: inset 0px 1px 0px 0px #AF526B;
-	box-shadow: inset 0px 1px 0px 0px #AF526B;
+	-moz-box-shadow: inset 0px 1px 0px 0px #007cad;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #007cad;
+	box-shadow: inset 0px 1px 0px 0px #007cad;
 	background-color: #ffffff;
-	border: 1px solid #AF526B;
+	border: 1px solid #007cad;
 	display: inline-block;
 	cursor: pointer;
-	color: #AF526B;
+	color: #007cad;
 	font-family: "Cormorant", sans-serif;
 	font-size: 14px;
 	padding: 8px 18px;
@@ -91,21 +91,21 @@
 .form-style-8 input[type="button"]:hover, 
 .form-style-8 input[type="submit"]:hover {
     background-color: white;
-    color: #AF526B;
-	border: 2px solid #AF526B;
+    color: #007cad;
+	border: 2px solid #007cad;
 	text-align: center;
 	border-radius: 25px;
 }
 /* label */
 .form-style-8 label[type="radio"]{
-	-moz-box-shadow: inset 0px 1px 0px 0px #AF526B;
-	-webkit-box-shadow: inset 0px 1px 0px 0px #AF526B;
-	box-shadow: inset 0px 1px 0px 0px #AF526B;
+	-moz-box-shadow: inset 0px 1px 0px 0px #007cad;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #007cad;
+	box-shadow: inset 0px 1px 0px 0px #007cad;
 	background-color: #ffffff;
-	border: 1px solid #AF526B;
+	border: 1px solid #007cad;
 	display: inline-block;
 	cursor: pointer;
-	color: #AF526B;
+	color: #007cad;
 	font-family: "Cormorant", sans-serif;
 	font-size: 14px;
 
@@ -115,7 +115,32 @@
 }
 .form-style-8 label[type="radio"]:hover{
     background-color: white;
-    color: #AF526B;
-    border: 2px solid #AF526B;
+    color: #007cad;
+    border: 2px solid #007cad;
 }
 
+/* //
+007CAD azul
+E8D33F oro
+2C2A29 negro
+
+// */
+.form-control{
+	display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    /* color: aquamarine; */
+    /* color: #495057; */
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #007cad;
+    /* background-color: #fff; */
+    background-clip: padding-box;
+    /* border: 1px solid #ced4da; */
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+}
