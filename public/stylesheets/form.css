@@ -13,7 +13,8 @@
 	border: 0px 0px 15px #007cad;
 	color: #e8d33f;
   text-transform: uppercase;
-  font-family: 'Cormorant', sans-serif;
+	font-family: 'Cormorant', sans-serif;
+	letter-spacing: 2px;
   /* color: #feede0; */
   font-size: 18px;
   font-weight: 100;
