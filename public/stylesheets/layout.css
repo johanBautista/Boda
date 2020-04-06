@@ -101,6 +101,30 @@ p {
   width: 50%;
   height: 1px;
 }
-.mapa{
+.mapa {
+  /* background-color: #007cad; */
+  float: right;
+  width: 50%;
+}
+.section-log {
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.btn-outline-info {
+  color: #007cad;
+  border-color: #007cad;
+  padding: 15px 30px;
+  font-family: auto;
+}
+.prueba {
+  display: inline;
+  background-color: #007cad;
+}
+.pruebaA {
+  display: inline;
   background-color: #007cad;
 }

@@ -1,146 +1,136 @@
-
-.form-style-8{
-	font-family: "Cormorant", sans-serif;
-	width: 500px;
-	padding: 30px;
-	background: #FFFFFF;
-	margin: 50px auto;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
-
+.form-style-8 {
+  font-family: 'Cormorant', sans-serif;
+  width: 500px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.068);
+  margin: 50px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
-.form-style-8 h2{
-	background: #007cad;
-	text-transform: uppercase;
-	font-family: "Cormorant", sans-serif;
-	color: #FEEDE0;
-	font-size: 18px;
-	font-weight: 100;
-	padding: 20px;
-    margin: -30px -30px 30px -30px;
-    text-align: center;
+.form-style-8 h2 {
+	/* background: #007cad; */
+	border: 0px 0px 15px #007cad;
+	color: #e8d33f;
+  text-transform: uppercase;
+  font-family: 'Cormorant', sans-serif;
+  /* color: #feede0; */
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px;
+  margin: -30px -30px 30px -30px;
+  text-align: center;
 }
-.form-style-8 input[type="text"],
-.form-style-8 input[type="date"],
-.form-style-8 input[type="datetime"],
-.form-style-8 input[type="email"],
-.form-style-8 input[type="number"],
-.form-style-8 input[type="search"],
-.form-style-8 input[type="time"],
-.form-style-8 input[type="url"],
-.form-style-8 input[type="password"],
-.form-style-8 input[type="radio"], 
+.form-style-8 input[type='text'],
+.form-style-8 input[type='date'],
+.form-style-8 input[type='datetime'],
+.form-style-8 input[type='email'],
+.form-style-8 input[type='number'],
+.form-style-8 input[type='search'],
+.form-style-8 input[type='time'],
+.form-style-8 input[type='url'],
+.form-style-8 input[type='password'],
+/* .form-style-8 input[type='radio'], */
 .form-style-8 textarea,
 .form-style-8 select 
 {
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	outline: none;
-	display: block;
-	width: 100%;
-	padding: 7px;
-	border: none;
-	border-bottom: 1px solid #007cad;
-	background: transparent;
-	margin-bottom: 10px;
-	font: 16px "Cormorant", sans-serif;
-	height: 45px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #007cad;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px 'Cormorant', sans-serif;
+  height: 45px;
 }
-.form-style-8 textarea{
-	resize:none;
-	overflow: hidden;
+.form-style-8 textarea {
+  resize: none;
+  overflow: hidden;
 }
-.form-style-8 input[type="button"], 
-.form-style-8 input[type="radio"], 
-.form-style-8 input[type="submit"]{
-	-moz-box-shadow: inset 0px 1px 0px 0px #007cad;
-	-webkit-box-shadow: inset 0px 1px 0px 0px #007cad;
-	box-shadow: inset 0px 1px 0px 0px #007cad;
-	background-color: #ffffff;
-	border: 1px solid #007cad;
-	display: inline-block;
-	cursor: pointer;
-	color: #007cad;
-	font-family: "Cormorant", sans-serif;
-	font-size: 14px;
-	padding: 8px 18px;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
+/* .form-style-8 input[type='button'],
+.form-style-8 input[type='radio'],
+.form-style-8 input[type='submit']  */
+/* {
+  -moz-box-shadow: inset 0px 1px 0px 0px #007cad;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #007cad;
+  box-shadow: inset 0px 1px 0px 0px #007cad; */
+  /* background-color: #ffffff; */
+  /* border: 1px solid #007cad; */
+  /* display: inline-block; */
+  /* cursor: pointer;
+  color: #007cad;
+  font-family: 'Cormorant', sans-serif;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+} */
+.form-style-8 input[type='button'],
+.form-style-8 input[type='submit'] {
+  -moz-box-shadow: inset 0px 1px 0px 0px #007cad;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #007cad;
+  box-shadow: inset 0px 1px 0px 0px #007cad;
+  /* background-color: #ffffff; */
+  border: 1px solid #007cad;
+  /* display: inline-block; */
+  cursor: pointer;
+  color: #007cad;
+  font-family: 'Cormorant', sans-serif;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  text-align: center;
 }
-.form-style-8 input[type="button"], 
-.form-style-8 input[type="submit"]{
-	-moz-box-shadow: inset 0px 1px 0px 0px #007cad;
-	-webkit-box-shadow: inset 0px 1px 0px 0px #007cad;
-	box-shadow: inset 0px 1px 0px 0px #007cad;
-	background-color: #ffffff;
-	border: 1px solid #007cad;
-	display: inline-block;
-	cursor: pointer;
-	color: #007cad;
-	font-family: "Cormorant", sans-serif;
-	font-size: 14px;
-	padding: 8px 18px;
-	text-decoration: none;
-	text-transform: uppercase;
-	border-radius: 25px;
-	text-align: center;
-}
-.form-style-8 input[type="button"]:hover, 
-.form-style-8 input[type="submit"]:hover {
-    background-color: white;
-    color: #007cad;
-	border: 2px solid #007cad;
-	text-align: center;
-	border-radius: 25px;
+.form-style-8 input[type='button']:hover,
+.form-style-8 input[type='submit']:hover {
+  /* background-color: white; */
+  color: #007cad;
+  border: 2px solid #007cad;
+  text-align: center;
+  border-radius: 25px;
 }
 /* label */
-.form-style-8 label[type="radio"]{
-	-moz-box-shadow: inset 0px 1px 0px 0px #007cad;
-	-webkit-box-shadow: inset 0px 1px 0px 0px #007cad;
-	box-shadow: inset 0px 1px 0px 0px #007cad;
-	background-color: #ffffff;
-	border: 1px solid #007cad;
-	display: inline-block;
-	cursor: pointer;
-	color: #007cad;
-	font-family: "Cormorant", sans-serif;
-	font-size: 14px;
-
-	text-decoration: none;
-	text-transform: uppercase;
-
-}
-.form-style-8 label[type="radio"]:hover{
-    background-color: white;
-    color: #007cad;
-    border: 2px solid #007cad;
-}
+/* .form-style-8 label[type='radio'] {
+  -moz-box-shadow: inset 0px 1px 0px 0px #007cad;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #007cad;
+  box-shadow: inset 0px 1px 0px 0px #007cad;
+  background-color: #ffffff;
+  border: 1px solid #007cad;
+  display: inline-block;
+  cursor: pointer;
+  color: #007cad;
+  font-family: 'Cormorant', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+} */
+/* .form-style-8 label[type='radio']:hover {
+  background-color: white;
+  color: #007cad;
+  border: 2px solid #007cad;
+} */
 
 /* //
 007CAD azul
 E8D33F oro
 2C2A29 negro
 
+style="border: 5px solid #007cad;"
+
 // */
-.form-control{
-	display: block;
-    width: 100%;
-    height: calc(2.25rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    /* color: aquamarine; */
-    /* color: #495057; */
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #007cad;
-    /* background-color: #fff; */
-    background-clip: padding-box;
-    /* border: 1px solid #ced4da; */
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #007cad;
 }
+label{
+	/* display: block; */
 }
