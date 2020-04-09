@@ -14,30 +14,27 @@
     </script> --}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="javascripts/contador.js"></script>
-
 </head>
 
 <!--Navbar-->
 <nav class="navbar navbar-expand-md navbar-light bg-light">
-
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="Home button" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand logo" href="/">Boda Xavi i Eva</a>
+    <a class="navbar-brand logo" href="/">Boda Xavi i Eva // STEVEN</a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-
             <li class="nav-item">
-                <a class="nav-link" href="/routes">Llista de Convidats</a>
+                <a class="nav-link" href="/llista">Llista de Convidats</a>
             </li>
         </ul>
         <br>
         <a class="logout" href="/auth/logout">{{currentUser.name}} - Log out</a>
-
     </div>
 </nav>
-<!--/Navbar-->
+
+<!--Body-->
 
 <body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -51,7 +48,6 @@
         crossorigin="anonymous"></script>
 
     {{{body}}}
-
 
 </body>
 
