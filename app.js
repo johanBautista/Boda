@@ -13,10 +13,10 @@ require('dotenv').config();
 //mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
 mongoose.connect('mongodb://buski:pere.2019@ds125125.mlab.com:25125/app')
   .then(() => {
-    console.log('😀')
+    console.log('😀, TODO OK!')
   })
   .catch(() => {
-    console.log('🙁');
+    console.log('🙁, DANGER!!');
   })
 
   
