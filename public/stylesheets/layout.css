@@ -128,16 +128,25 @@ p {
   display: inline;
   background-color: #007cad;
 }
-.logo {
-  background-color: tomato;
-  color: #007cad;
-}
-.navbar a {
-  font-size: 2em;
-}
-.llista-page{
+
+.llista-page {
   margin-top: 50px;
 }
-.llista-link{
+.llista-link {
   text-transform: none;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: xx-large;
+}
+.navbar-brand {
+  margin-right: 30%;
+}
+a.logout {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: x-large;
+}
+.navbar-light .navbar-brand {
+  color: #007cad;
+  font-size: -webkit-xxx-large;
 }
