@@ -2,13 +2,14 @@ const express = require('express');
 const bcrypt = require('bcrypt');
 const router = express.Router();
 const saltRounds = 10;
-
 const User = require('../models/user');
 
+//
 router.get('/signup', (req, res, next) => {
   res.render('signup');
 });
 
+//
 router.post('/signup', (req, res, next) => {
   const { name, password, email } = req.body;
 
@@ -28,7 +29,7 @@ router.post('/signup', (req, res, next) => {
             password: hashedPassword,
           })
             .then((newUser) => {
-              res.redirect('/trips');
+              res.redirect('/login');
             })
             .catch((error) => {
               next(error);
@@ -41,6 +42,7 @@ router.post('/signup', (req, res, next) => {
   }
 });
 
+//
 router.get('/login', (req, res, next) => {
   const data = {
     messages: req.flash('info'),
@@ -48,6 +50,7 @@ router.get('/login', (req, res, next) => {
   res.render('login', data);
 });
 
+//
 router.post('/login', (req, res, next) => {
   const { password, email } = req.body;
   if (!password || !email) {
@@ -59,7 +62,7 @@ router.post('/login', (req, res, next) => {
         if (user) {
           if (bcrypt.compareSync(password, user.password)) {
             req.session.currentUser = user;
-            res.redirect('/trips');
+            res.redirect('/llista');
           } else {
             req.flash('info', 'Username o password incorrectos');
             res.redirect('/auth/login');
@@ -75,6 +78,7 @@ router.post('/login', (req, res, next) => {
   }
 });
 
+//
 router.get('/logout', (req, res, next) => {
   req.session.destroy((err) => {
     res.redirect('/auth/login');

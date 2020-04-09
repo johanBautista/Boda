@@ -129,9 +129,15 @@ p {
   background-color: #007cad;
 }
 .logo {
-  /* background-color: tomato; */
+  background-color: tomato;
   color: #007cad;
 }
 .navbar a {
   font-size: 2em;
+}
+.llista-page{
+  margin-top: 50px;
+}
+.llista-link{
+  text-transform: none;
 }
