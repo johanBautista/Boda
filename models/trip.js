@@ -1,7 +1,7 @@
 // const mongoose = require("mongoose");
 // const Schema = mongoose.Schema;
 
-// const tripSchema = new Schema({
+// const tripschema = new Schema({
 //      username: String,
 //      origin: String,
 //      destination: String,
@@ -17,7 +17,6 @@
 //     }
 //   });
 
-// const Trip = mongoose.model("Trip", tripSchema);
+// const Trip = mongoose.model("Trip", tripschema);
 
 // module.exports = Trip;
-

@@ -4,27 +4,26 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
-const session = require("express-session");
-const MongoStore = require("connect-mongo")(session);
+const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
 const flash = require('connect-flash');
 const auth = require('./middleware/auth');
 require('dotenv').config();
 
 //mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true })
-mongoose.connect('mongodb://buski:pere.2019@ds125125.mlab.com:25125/app')
+mongoose
+  .connect('mongodb://buski:pere.2019@ds125125.mlab.com:25125/app')
   .then(() => {
-    console.log('😀, TODO OK!')
+    console.log('😀, TODO OK!');
   })
   .catch(() => {
     console.log('🙁, DANGER!!');
-  })
+  });
 
-  
 const indexRouter = require('./routes/index');
 const authRouter = require('./routes/auth');
 const tripsRouter = require('./routes/trips.js');
 const routesRouter = require('./routes/routes');
-
 
 const app = express();
 
@@ -32,18 +31,20 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-app.use(session({
-  store: new MongoStore({
-    mongooseConnection: mongoose.connection,
-    ttl: 24 * 60 * 60 // 1 day
+app.use(
+  session({
+    store: new MongoStore({
+      mongooseConnection: mongoose.connection,
+      ttl: 24 * 60 * 60, // 1 day
+    }),
+    secret: 'chofer',
+    resave: true,
+    saveUninitialized: true,
+    cookie: {
+      maxAge: 24 * 60 * 60 * 1000,
+    },
   }),
-  secret: 'chofer',
-  resave: true,
-  saveUninitialized: true,
-  cookie: {
-    maxAge: 24 * 60 * 60 * 1000
-  }
-}));
+);
 
 app.use(flash());
 app.use(logger('dev'));
@@ -62,7 +63,7 @@ app.use('/routes', auth.isLoggedIn, routesRouter);
 // app.use('/users', usersRouter); --> why did Pere deleted it?
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
