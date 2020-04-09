@@ -22,7 +22,7 @@ mongoose.connect('mongodb://buski:pere.2019@ds125125.mlab.com:25125/app')
   
 const indexRouter = require('./routes/index');
 const authRouter = require('./routes/auth');
-const tripsRouter = require('./routes/trips');
+const tripsRouter = require('./routes/trips.js');
 const routesRouter = require('./routes/routes');
 
 

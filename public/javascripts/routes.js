@@ -1,46 +1,46 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
-const Trip = require("../models/trip");
+const Trip = require('../models/trip');
 
-router.get("/", (req, res, next) => {
+router.get('/', (req, res, next) => {
   Trip.find({})
-    .then(trips => {
-      res.render("routes/index", { trips });
+    .then((trips) => {
+      res.render('routes/index', { trips });
     })
-    .catch(error => {
+    .catch((error) => {
       next(error);
     });
 });
 
-router.get("/:id/edit", (req, res, next) => {
+router.get('/:id/edit', (req, res, next) => {
   const { id } = req.params;
   Trip.findById(id)
-    .then(trips => {
-      res.render("routes/edit", trips);
+    .then((trips) => {
+      res.render('routes/edit', trips);
     })
-    .catch(error => {
+    .catch((error) => {
       next(error);
     });
 });
 
-router.post("/:id", (req, res, next) => {
+router.post('/:id', (req, res, next) => {
   const { id } = req.params;
   const name = req.body;
   Trip.findByIdAndUpdate(id, name)
-    .then(data => {
-      res.redirect("/routes");
+    .then((data) => {
+      res.redirect('/routes');
     })
-    .catch(error => {
+    .catch((error) => {
       next(error);
     });
 });
-router.post("/:id/remove", (req, res, next) => {
+router.post('/:id/remove', (req, res, next) => {
   const { id } = req.params;
   Trip.findByIdAndRemove(id)
     .then(() => {
-      res.redirect("/routes");
+      res.redirect('/routes');
     })
-    .catch(error => {
+    .catch((error) => {
       next(error);
     });
 });
